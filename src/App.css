@@ -1,38 +1,213 @@
-.App {
+
+/*
+Awash Adhikari
+301424394
+Web Application Development ( Sec.003 )
+9/28/2024 (Last Updated)
+*/
+
+
+
+body {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffbb98;
+  color: #344648;
+}
+
+
+nav {
+  background-color: #fbe0c3;
+  color: #ffbb98;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #344648;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav img {
+  width: 70px;
+  height: 70px;
+}
+
+
+.home {
+  text-align: center;
+  padding: 50px 30px;
+  background-color: #ffbb98;
+}
+
+.home h1 {
+  font-size: 36px;
+}
+
+.home button {
+  background-color: #fbe0c3;
+  width: 100px;
+  height: 50px;
+}
+
+.home p {
+  font-size: 18px;
+}
+
+
+.about-me {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.about-me img {
+  width: 150px;
+  height: auto;
+  border-radius: 100%;
+  margin-bottom: 20px;
+}
+
+.about-me h1 {
+  font-size: 36px;
+}
+
+.about-me p {
+  font-size: 18px;
+}
+
+.about-me a {
+  color: #344648;
+}
+
+
+.projects {
+  padding: 50px 20px;
+}
+
+.projects h1 {
+  text-align: center;
+  font-size: 36px;
+}
+
+.projects-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: #fbe0c3;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.services {
+  padding: 50px 20px;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.services li {
+  padding: 50px 110px;
+  text-align: center;
+}
+
+.services h1 {
+  font-size: 36px;
+}
+
+
+.contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact h1 {
+  font-size: 36px;
+}
+
+.contact form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.contact input,
+.contact textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.contact button {
+  padding: 10px 20px;
+  background-color: #344648;
+  color: #fbe0c3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #344648;
+}
+
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #344648;
+  color: #fbe0c3;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .projects-list {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .project-card {
+      width: 90%;
   }
 }
